@@ -1,0 +1,33 @@
+
+<!-- begin Refreshing Report Queue custom content -->
+
+<!-- CSS -->
+<style type="text/css" >
+    .report_queue a:visited {color: #800080;}
+</style>
+
+<!-- TEMPLATES -->
+<script type="text/template" id="job-control-template">
+    <!-- begin Refreshing Report Queue custom content -->
+    <img id="busyimage" style="display:none;" src="/images/RefreshingReportQueue/busy_blue.gif"/>
+    <input type="hidden" name="ac" value="report_batch_runjobagain"/>
+    <input type="hidden" name="ac" value="report_batch_deletejob"/>
+    <!-- end Refreshing Report Queue custom content -->
+</script>
+
+<script type="text/template" id="refresh-button-template">
+    <a href="home.html" class="button">~[text]psx.html.teachers_reportqueue.home.refresh[/text]</a>
+</script>
+
+<script type="text/template" id="report-template">
+    <!--BEGIN dynamic content holder-->
+    <div id="reportq"></div>
+    <!--END dynamic content holder-->
+    <br/>
+    <div class="button-row"></div>
+</script>
+
+<!-- JS INCLUDES -->
+<script type="text/javascript" src="/scripts/RefreshingReportQueue/refresh.js?_=321654968763241"></script>
+
+<!--end Refreshing Report Queue custom content -->

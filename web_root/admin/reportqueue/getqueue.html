@@ -1,0 +1,44 @@
+<table border="0" cellspacing="0" cellpadding="4">
+    <thead>
+    <tr bgcolor="#f6f6f6">
+        <th>~[text:psx.html.admin_reportqueue.home.created]</th>
+        <th>~[text:psx.html.admin_reportqueue.home.job_name]</th>
+        <th>School</th>
+        <th>~[text:psx.html.admin_reportqueue.home.started]</th>
+        <th>~[text:psx.html.admin_reportqueue.home.ended]</th>
+        <th colspan="2">~[text:psx.html.admin_reportqueue.home.status]</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr bgcolor="#edf3fe">~[reports_batch_joblist]
+        <td>~(Creation Date)</td>
+        <td><a href="detail.html?frn=~(frn)">~(ReportID)</a></td>
+        <td>~(decode;~(schoolid);0;District;-1;District;~([39]Abbreviation))</td>
+        <td>[started]</td>
+        <td>[ended]</td>
+        <td class="rstatus">[status]</td>
+        <td style="width: 50px;">
+            <a href="#" data-internal-id="~(internal_id)" class="rerun"> <img height="16" width="16"
+                                                                              src="/images/btn_reports_rerun.gif"
+                                                                              alt="Run report again" border="0"/></a>
+
+
+            <div class="cancelicon" style="display:inline">
+                <a href="home.html?ac=report_batch_deletejob&report_batch_jobID=~(internal_id)">
+                    <img src="/images/btn_reports_delete.gif" height="16" width="16" alt="Delete Job" border="0">
+                </a>
+            </div>
+
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6">
+            ~[text:psx.html.admin_reportqueue.home.click_on_a_job_name_to_view_the_job_detail_page_which_provid]<p>
+            ~[text:psx.html.admin_reportqueue.home.if_a_job_is_running_or_is_waiting_to_be_run_you_can_cancel_i]
+
+            <p>
+                ~[text:psx.html.admin_reportqueue.home.completed_and_canceled_jobs_will_automatically_be_deleted_af,param:~[displaypref:repo_batch_timetolive]]~[if.modaccess]~[text:psx.html.admin_reportqueue.home.click_on_the_trash_can_icon_to_immediately_delete_an_individ]<a
+                    href="/admin/reportqueue/home.html?ac=report_batch_deletejob&deleteall=true">~[text:psx.html.admin_reportqueue.home.delete_all]</a>~[text:psx.html.admin_reportqueue.home.completed_or_canceled_jobs][/if]
+    </tr>
+    </tbody>
+</table>
