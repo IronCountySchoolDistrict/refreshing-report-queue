@@ -1,0 +1,19 @@
+{
+  "name": "refreshing-report-queue",
+  "version": "1.0.0",
+  "description": "Automatically refreshes the report queue every 5 seconds while reports are running",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronCountySchoolDistrict/refreshing-report-queue"
+  },
+  "author": "IronCountySchoolDistrict",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/IronCountySchoolDistrict/refreshing-report-queue/issues"
+  },
+  "homepage": "https://github.com/IronCountySchoolDistrict/refreshing-report-queue#readme"
+}

@@ -28,6 +28,6 @@
 </script>
 
 <!-- JS INCLUDES -->
-<script type="text/javascript" src="/scripts/RefreshingReportQueue/refresh.js?_=321654968763241"></script>
+<script type="text/javascript" src="<!-- @echo IMAGE_SERVER_URL -->/scripts/refreshing-report-queue/refresh.js"></script>
 
 <!--end Refreshing Report Queue custom content -->
