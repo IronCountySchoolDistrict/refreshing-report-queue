@@ -28,6 +28,16 @@
 </script>
 
 <!-- JS INCLUDES -->
-<script type="text/javascript" src="/scripts/refreshing-report-queue/js/refresh.js"></script>
+<script>
+  require.config({
+    paths: {
+      refresh: '/scripts/refreshing-report-queue/js/refresh'
+    }
+  });
+
+  require(['refresh'], function(refresh) {
+    refresh.default();
+  });
+</script>
 
 <!--end Refreshing Report Queue custom content -->
